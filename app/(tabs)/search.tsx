@@ -89,7 +89,7 @@ export default function Search() {
         onChangeText={(text) => setSearchQuery(text)}
         onSubmit={() => fetchPlantsBySearch(searchQuery)}
       />
-      <View style={styles.dropdownContainer}></View>
+      <View style={styles.dropdownContainer}>
         <TouchableOpacity
           style={styles.dropdownHeader}
           onPress={() => setDropdownOpen(!dropdownOpen)}
